@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moneda</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="menu text-center" id="menu">
+    <div class="tarjeta">    
+        <h1 class="text-primary">Conversor de moneda</h1>
+            <p class="text-gray">Los valores mostrados están actualizados.</p>
+            <div class="mb-3">
+                <input type="number" class="border rounded" id="valorUsuario">
+                <select name="moneda" id="monedaSelect" class="border rounded" id="selectMoneda">
+                    <option value="usd">Dólar Blue</option>
+                    <option value="ars">Peso Argentino</option>
+                </select>
+            </div>
+            <div class="">
+                <input type="text" class="border rounded" id="mostrarCambio" id="selectCambio" disabled>
+                <select name="" class="border rounded" id="otherMoneda" disabled>
+                    <option value="ars">Peso Argentino</option>
+                    <option value="usd">Dólar Blue</option>
+                </select>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="valor" id="mostrarValores">
+        <h2>Valor del dólar</h2>
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class=" col-3 compra">
+                <h3 class="mb-4">Compra</h3>
+                <h2 id="valorCompra">$100.00</h2>    
+            </div>
+            <div class="col-3 venta">
+                <h3 class="mb-4">Venta</h3>
+                <h2 id="valorVenta">$90.00</h2>
+            <div class="col-3"></div>
+        </div>
+    </div>
+        <button type="button" class="btn btn-primary" id="volver">Volver</button>
+    </div>
+
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
